@@ -38,12 +38,11 @@ const AddAReview = () => {
             photo: photoURL,
             message: userReview,
             rating: serviceReviews.rating,
-            date: new Date(),
-            id: serviceReviews.serviceId
+            date: new Date()
         }
 
         /* call order API from server to read order object from client side */
-        fetch('https://dr-shihan-mostafizur-server.vercel.app/reviews', {
+        fetch('http://localhost:5000/reviews', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json',

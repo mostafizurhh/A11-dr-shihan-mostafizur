@@ -3,7 +3,7 @@ export const setJwtTokenApi = (user) => {
         email: user.email
     }
     /* get or request JWT token from server */
-    fetch('https://dr-shihan-mostafizur-server.vercel.app/jwt', {
+    fetch('http://localhost:5000/jwt', {
         method: 'POST',
         headers: {
             'content-type': 'application/json'

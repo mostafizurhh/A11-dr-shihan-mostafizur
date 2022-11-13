@@ -11,7 +11,7 @@ const ReviewRow = ({ review, handleOrderDelete, handleStatusUpdate }) => {
 
     /* loading all service data */
     useEffect(() => {
-        fetch(`https://dr-shihan-mostafizur-server.vercel.app/services/${serviceId}`)
+        fetch(`http://localhost:5000/services/${serviceId}`)
             .then(res => res.json())
             .then(data => setServiceReview(data))
             .catch(e => console.error(e))

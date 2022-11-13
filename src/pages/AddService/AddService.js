@@ -4,7 +4,6 @@ import { useLocation, useNavigate } from 'react-router-dom';
 import useTitle from '../../hooks/useTitle';
 
 const AddService = () => {
-
     useTitle('Add Service')
 
     /*--------------
@@ -34,7 +33,7 @@ const AddService = () => {
             date: new Date()
         }
 
-        fetch('https://dr-shihan-mostafizur-server.vercel.app/services', {
+        fetch('http://localhost:5000/services', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json',

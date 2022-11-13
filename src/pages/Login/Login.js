@@ -59,7 +59,7 @@ const Login = () => {
             .then(result => {
                 const user = result.user;
                 console.log(user)
-                // setJwtTokenApi(user)
+                setJwtTokenApi(user)
                 navigate(from, { replace: true })/* navigate user */
             })
             .catch(error => console.error(error))

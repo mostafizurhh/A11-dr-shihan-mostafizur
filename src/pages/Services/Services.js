@@ -11,7 +11,7 @@ const Services = () => {
 
 
     useEffect(() => {
-        fetch('https://dr-shihan-mostafizur-server.vercel.app/allservices')
+        fetch('http://localhost:5000/allservices')
             .then(res => res.json())
             .then(data => setServices(data))
             .catch(error => console.error(error))
@@ -48,8 +48,6 @@ const Services = () => {
                         service={service}></ServiceCard>)
                 }
             </div>
-
-
         </div>
     );
 };

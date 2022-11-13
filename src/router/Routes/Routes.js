@@ -48,12 +48,12 @@ export const router = createBrowserRouter([
             {
                 path: '/services/:id',
                 element: <Service></Service>,
-                loader: async ({ params }) => fetch(`https://dr-shihan-mostafizur-server.vercel.app/services/${params.id}`)
+                loader: async ({ params }) => fetch(`http://localhost:5000/services/${params.id}`)
             },
             {
                 path: '/addareview/:id',
                 element: <PrivateRoute><AddAReview></AddAReview></PrivateRoute>,
-                loader: async ({ params }) => fetch(`https://dr-shihan-mostafizur-server.vercel.app/services/${params.id}`)
+                loader: async ({ params }) => fetch(`http://localhost:5000/services/${params.id}`)
             },
             {
                 path: '/myreview',
@@ -62,7 +62,7 @@ export const router = createBrowserRouter([
             {
                 path: '/editreview/:id',
                 element: <EditReview></EditReview>,
-                loader: async ({ params }) => fetch(`https://dr-shihan-mostafizur-server.vercel.app/reviews/${params.id}`)
+                loader: async ({ params }) => fetch(`http://localhost:5000/reviews/${params.id}`)
             },
             {
                 path: '/addservice',

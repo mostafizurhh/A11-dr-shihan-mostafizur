@@ -76,7 +76,7 @@ const Register = () => {
                 setError('')
                 form.reset()
                 handleUpdateUserInfo(name, photoURL)
-                // setJwtTokenApi(user)
+                setJwtTokenApi(user)
                 navigate(from, { replace: true })/* navigate user */
                 toast.success('Wooho!!! Registration Successful', { duration: 5000 })
             })
