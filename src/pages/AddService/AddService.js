@@ -33,7 +33,7 @@ const AddService = () => {
             date: new Date()
         }
 
-        fetch('http://localhost:5000/services', {
+        fetch('https://dr-shihan-mostafizur-server-mostafizurhh.vercel.app/services', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json',

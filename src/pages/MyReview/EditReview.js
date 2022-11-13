@@ -21,7 +21,7 @@ const EditReview = () => {
     const handleUpdateReview = (event) => {
         event.preventDefault()
         // console.log(message)
-        fetch(`http://localhost:5000/reviews/${editReview._id}`, {
+        fetch(`https://dr-shihan-mostafizur-server-mostafizurhh.vercel.app/reviews/${editReview._id}`, {
             method: 'PATCH',
             headers: {
                 'content-type': 'application/json',

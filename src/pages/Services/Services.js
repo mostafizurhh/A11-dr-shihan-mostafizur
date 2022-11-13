@@ -11,7 +11,7 @@ const Services = () => {
 
 
     useEffect(() => {
-        fetch('http://localhost:5000/allservices')
+        fetch('https://dr-shihan-mostafizur-server-mostafizurhh.vercel.app/allservices')
             .then(res => res.json())
             .then(data => setServices(data))
             .catch(error => console.error(error))

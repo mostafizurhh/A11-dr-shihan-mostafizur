@@ -5,19 +5,19 @@ import { initializeApp } from "firebase/app";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-    // apiKey: process.env.RECAT_APP_apiKey,
-    // authDomain: process.env.RECAT_APP_authDomain,
-    // projectId: process.env.RECAT_APP_projectId,
-    // storageBucket: process.env.RECAT_APP_storageBucket,
-    // messagingSenderId: process.env.RECAT_APP_messagingSenderId,
-    // appId: process.env.RECAT_APP_appId,
+    apiKey: process.env.REACT_APP_apiKey,
+    authDomain: process.env.REACT_APP_authDomain,
+    projectId: process.env.REACT_APP_projectId,
+    storageBucket: process.env.REACT_APP_storageBucket,
+    messagingSenderId: process.env.REACT_APP_messagingSenderId,
+    appId: process.env.REACT_APP_appId,
 
-    apiKey: "AIzaSyBgMJiRNkLUWfGmiCNs8NutprX_5qbE4n8",
-    authDomain: "dr-shihan-mostafizur.firebaseapp.com",
-    projectId: "dr-shihan-mostafizur",
-    storageBucket: "dr-shihan-mostafizur.appspot.com",
-    messagingSenderId: "304118241862",
-    appId: "1:304118241862:web:f7cb20be96aff7eba5c847"
+    // apiKey: "AIzaSyBgMJiRNkLUWfGmiCNs8NutprX_5qbE4n8",
+    // authDomain: "dr-shihan-mostafizur.firebaseapp.com",
+    // projectId: "dr-shihan-mostafizur",
+    // storageBucket: "dr-shihan-mostafizur.appspot.com",
+    // messagingSenderId: "304118241862",
+    // appId: "1:304118241862:web:f7cb20be96aff7eba5c847"
 };
 
 // Initialize Firebase
