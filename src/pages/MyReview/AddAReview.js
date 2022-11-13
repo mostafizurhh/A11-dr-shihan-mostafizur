@@ -43,7 +43,7 @@ const AddAReview = () => {
         }
 
         /* call order API from server to read order object from client side */
-        fetch('http://localhost:5000/reviews', {
+        fetch('https://dr-shihan-mostafizur-server.vercel.app/reviews', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json',
