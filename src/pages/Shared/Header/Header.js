@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import logo from './logo.png'
 import { FaUser } from 'react-icons/fa'
 import { useContext } from 'react';
@@ -17,20 +17,20 @@ const Header = () => {
     const menuItems = <>
         {user?.uid ?
             <>
-                <li><Link to='/'>Home</Link></li>
-                <li><Link to='/services'>Services</Link></li>
-                <li><Link to='/blog'>Blog</Link></li>
-                <li><Link to='/about'>About Me</Link></li>
-                <li><Link to='/myreview'>MyReview</Link></li>
-                <li><Link to='/addservice'>Add Service</Link></li>
+                <li><NavLink to='/'>Home</NavLink></li>
+                <li><NavLink to='/services'>Services</NavLink></li>
+                <li><NavLink to='/blog'>Blog</NavLink></li>
+                <li><NavLink to='/about'>About Me</NavLink></li>
+                <li><NavLink to='/myreview'>MyReview</NavLink></li>
+                <li><NavLink to='/addservice'>Add Service</NavLink></li>
 
             </>
             :
             <>
-                <li><Link to='/' className='mr-7'>Home</Link></li>
-                <li><Link to='/services' className='mr-7'>Services</Link></li>
-                <li><Link to='/blog' className='mr-7'>Blog</Link></li>
-                <li><Link to='/about'>About Me</Link></li>
+                <li><NavLink to='/' className='mr-7'>Home</NavLink></li>
+                <li><NavLink to='/services' className='mr-7'>Services</NavLink></li>
+                <li><NavLink to='/blog' className='mr-7'>Blog</NavLink></li>
+                <li><NavLink to='/about'>About Me</NavLink></li>
             </>
         }
     </>
@@ -46,7 +46,7 @@ const Header = () => {
                         {menuItems}
                     </ul>
                 </div>
-                <Link to='/'><img style={{ height: 90 }} src={logo} alt="" /></Link>
+                <NavLink to='/'><img style={{ height: 90 }} src={logo} alt="" /></NavLink>
             </div>
 
             {/* center navbar */}
@@ -78,7 +78,7 @@ const Header = () => {
                         }
                     </div>
 
-                    {/*------------------------------------ toggle between login and logout link 
+                    {/*------------------------------------ toggle between login and logout Navlink 
                     --------------------------------------*/}
                     <div>
                         {
@@ -88,8 +88,8 @@ const Header = () => {
                                 </div>
                                 :
                                 <div className='flex'>
-                                    <Link to='/login' className='mr-2'><button className='btn btn-xs btn-success ml-2'>Login</button></Link>
-                                    <Link to='/register' className='mr-2'><button className='btn btn-xs btn-primary'>Register</button></Link>
+                                    <NavLink to='/login' className='mr-2'><button className='btn btn-xs btn-success ml-2'>Login</button></NavLink>
+                                    <NavLink to='/register' className='mr-2'><button className='btn btn-xs btn-primary'>Register</button></NavLink>
                                 </div>
                         }
                     </div>

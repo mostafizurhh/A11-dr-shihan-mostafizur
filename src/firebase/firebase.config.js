@@ -11,13 +11,6 @@ const firebaseConfig = {
     storageBucket: process.env.REACT_APP_storageBucket,
     messagingSenderId: process.env.REACT_APP_messagingSenderId,
     appId: process.env.REACT_APP_appId,
-
-    // apiKey: "AIzaSyBgMJiRNkLUWfGmiCNs8NutprX_5qbE4n8",
-    // authDomain: "dr-shihan-mostafizur.firebaseapp.com",
-    // projectId: "dr-shihan-mostafizur",
-    // storageBucket: "dr-shihan-mostafizur.appspot.com",
-    // messagingSenderId: "304118241862",
-    // appId: "1:304118241862:web:f7cb20be96aff7eba5c847"
 };
 
 // Initialize Firebase
