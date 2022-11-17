@@ -1,4 +1,4 @@
-# Dr. Shihan Mostafizur (Client Side)
+# Dr. Shihan Mostafizur
 
 # Live Link: https://dr-shihan-mostafizur.web.app
 
