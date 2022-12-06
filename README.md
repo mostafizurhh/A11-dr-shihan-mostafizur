@@ -2,7 +2,7 @@
 
 # Live Link: https://dr-shihan-mostafizur.web.app
 
-##Tools and Technologies
+## Tools and Technologies
 MongoDb, React, Express.js, JWT, Firebase, Tailwind, DaisyUI, React Photo View, React-hot-toast, React Router, React Icons are some of the tools and technologies used in this project
 
 ## About The Project
